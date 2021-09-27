@@ -1,0 +1,88 @@
+/*
+    Flexbox: Serve para manipular o posicionamento de um grupo de elementos.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo {
+    border: 5px solid gray;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 25px;
+}
+
+.navegacao {
+    /* 
+        Flexbox 
+        - display: flex;
+        - gap.
+    */
+    display: flex; /* 1. Ficará por padrão em linha. */
+    /*gap: 25px;*/ /* 2. Espaçamento entre os itens. */
+    justify-content: space-around;
+}
+
+.navegacao, 
+.produto {
+    border: 5px solid red;
+    padding: 25px;
+    margin: 0 0 25px;
+}
+
+.navegacao__item {
+    background-color: greenyellow;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.produto {
+    /* 
+        Flexbox 
+        - flex-direction;
+        - flex-wrap;
+        - justify-content.
+    */
+    display: flex;
+    gap: 25px;
+    /*
+        column: Posicionar um abaixo do outro.
+        column-reverse: Posicionar um abaixo do outro, invertendo a ordem dos itens.
+        row: Posicionar os elementos um ao lado do outro.
+        row-reverse: Posicionar os elementos um ao lado do outro, invertendo a ordem dos itens.
+    */
+    flex-direction: row; /* Valor padrão */
+    flex-wrap: wrap; /* Valor padrão. Controle de quebra. */
+    /*
+        flex-start: Posicionar os itens da esquerda pra direita.
+        flex-end: Posicionar os itens de direita para esquerda.
+        center: Centraliza os itens horizontalmente.
+    */
+    justify-content: space-between; /* Controla o posicionamento horizontal. */
+}
+
+.produto__item {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 25px;
+    height: 150px;
+    width: 150px;
+    /* 
+        Flexbox 
+        - align-items.
+    */
+    /*
+        center: Posicionar no centro do container.
+        flex-start: Posiciona no início do container.
+        flex-end: Posiciona no fim do container.
+    */
+    align-items: center; /* Controla o posicionamento vertical. */
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    justify-content: center;
+}
