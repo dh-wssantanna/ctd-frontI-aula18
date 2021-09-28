@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #241616;
+}
+
+.titulo {
+    color: #daa520;
+    text-align: center;
+    font-size: 24px;
+}
+
+.itens-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.itens {
+    height: 300px;
+    width: 350px;
+}
+
+.itens-img img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.itens-titulo {
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.itens-contagem {
+    color: violet;
+    font-size: 12px;
+    font-weight: 300;
+}
+
